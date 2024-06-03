@@ -95,4 +95,8 @@ p {
  color: #f8f9fa;
  font-size: large;
 }
+#time {
+  font-size: 2em;
+  padding: 20px;
+}
 /* Headings */
