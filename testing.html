@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Document</title>
+  <style>
+    .containn {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 400px; /* Full viewport height for centering */
+    }
+    .kodfun-galeri {
+      display: flex;
+      gap: 1rem;
+      width: 100%;
+      height: 100%; /* Make sure the gallery takes full height of the container */
+    }
+    .kodfun-galeri > div {
+      flex: 1;
+      border-radius: 1rem;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      transition: all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100%; /* Ensure each div takes the full height */
+    }
+    .kodfun-galeri > div:hover {
+      flex: 5;
+    }
+    .kodfun-galeri .textFormat {
+      font-size: 50px;
+      color: wheat;
+      text-align: center;
+      background-color: black;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+  <div class="containn">
+    <div class="kodfun-galeri">
+      <div style="background-image: url('./photo/slider/gamer-502.jpeg')">
+        <div class="textFormat">I'm Gamer</div>
+      </div>
+      <div style="background-image: url('./photo/slider/gamer-room-line-hero.webp')">
+        <div class="textFormat">Developer</div>
+      </div>
+      <div style="background-image: url('./photo/slider/s-l1600.webp')">
+        <div class="textFormat">Tester</div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

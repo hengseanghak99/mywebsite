@@ -99,4 +99,38 @@ p {
   font-size: 2em;
   padding: 20px;
 }
+.containn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px; /* Full viewport height for centering */
+}
+.kodfun-galeri {
+  display: flex;
+  gap: 1rem;
+  width: 100%;
+  height: 100%; /* Make sure the gallery takes full height of the container */
+}
+.kodfun-galeri > div {
+  flex: 1;
+  border-radius: 1rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition: all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure each div takes the full height */
+}
+.kodfun-galeri > div:hover {
+  flex: 5;
+}
+.kodfun-galeri .textFormat {
+  font-size: 50px;
+  color: wheat;
+  text-align: center;
+  background-color: black;
+  text-transform: uppercase;
+}
 /* Headings */
