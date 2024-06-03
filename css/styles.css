@@ -1,22 +1,98 @@
-
-
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&family=Poppins:ital,wght@1,900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,400;1,900&family=Poppins:ital,wght@1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:ital@0;1&display=swap");
 
 body {
-    font-family: "Montserrat";
-    background-color: rgb(227, 244, 244);
-    /* text-align: center; */
-  }
-  
-  h1, h2, h3, h4, h5, h6 {
-    font-family: "Montserrat-Bold";
-  }
-  
-  p {
-    color: #8f8f8f;
-  }
-  
-  /* Headings */
-  
-  
+  font-family: "Montserrat";
+  background-color: rgb(227, 244, 244);
+  /* text-align: center; */
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Montserrat-Bold";
+}
+
+p {
+  color: #8f8f8f;
+}
+.section-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  background-color: #c92c2c;
+  padding: 20px;
+}
+
+.btn {
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px;
+  text-align: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.btn:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  border-width: 2px;
+  border-color: #a95f5f;
+}
+
+.category-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.category-img {
+  width: 100px;
+  height: 100px;
+}
+
+.category-text {
+  text-decoration: none;
+  margin-top: 10px;
+  font-size: 14px;
+  color: #333;
+}
+
+.content img {
+  margin: 0 0px;
+}
+.content p {
+  margin: auto 0;
+}
+.content {
+  background-color: #f8f9fa;
+}
+.content h1, .content h2 {
+  margin: 0;
+}
+.card-img-top {
+  transition: transform 0.3s;
+  height: 150px; /* Set a fixed height */
+  object-fit: cover; /* Ensure the image covers the entire area */
+}
+.card-img-top:hover {
+  transform: scale(1.05);
+}
+.badge-custom {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+}
+.hover-overlay .mask {
+  transition: background-color 0.3s;
+}
+.hover-overlay:hover .mask {
+  background-color: rgba(251, 251, 251, 0.15);
+}
+.badge-custom {
+ color: #f8f9fa;
+ font-size: large;
+}
+/* Headings */
