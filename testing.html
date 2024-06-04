@@ -1,59 +1,143 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Document</title>
-  <style>
-    .containn {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 400px; /* Full viewport height for centering */
-    }
-    .kodfun-galeri {
-      display: flex;
-      gap: 1rem;
-      width: 100%;
-      height: 100%; /* Make sure the gallery takes full height of the container */
-    }
-    .kodfun-galeri > div {
-      flex: 1;
-      border-radius: 1rem;
-      background-position: center;
-      background-repeat: no-repeat;
-      background-size: cover;
-      transition: all 0.8s cubic-bezier(0.47, 0, 0.745, 0.715);
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      height: 100%; /* Ensure each div takes the full height */
-    }
-    .kodfun-galeri > div:hover {
-      flex: 5;
-    }
-    .kodfun-galeri .textFormat {
-      font-size: 50px;
-      color: wheat;
-      text-align: center;
-      background-color: black;
-      text-transform: uppercase;
-    }
-  </style>
-</head>
-<body>
-  <div class="containn">
-    <div class="kodfun-galeri">
-      <div style="background-image: url('./photo/slider/gamer-502.jpeg')">
-        <div class="textFormat">I'm Gamer</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <title>Navbar with Modal</title>
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      .image-grid {
+        display: grid;
+        grid-template-columns: repeat(5, 1fr);
+        gap: 10px;
+      }
+      .image-grid img {
+        width: 100%;
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-light bg-info text-white p-3">
+        <a class="navbar-brand" href="./homepage.html">
+          <img src="./photo/tnw.png" alt="Logo" class="logo" /></a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link text-white mr-3" href="./homepage.html"
+                >Home <span class="sr-only">(current)</span></a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-3" href="#" id="brandsLink">Brands</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white mr-3" href="./categoriespage.html"
+                >Categories</a
+              >
+            </li>
+          </ul>
+          <form class="form-inline my-2 my-lg-0">
+            <input
+              class="form-control mr-sm-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
+      </nav>
+
+      <div
+        class="modal fade"
+        id="brandModal"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="brandModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="brandModalLabel">Brand Modal</h5>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body" id="modalBody">
+              <!-- Images will be added dynamically here -->
+            </div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                Close
+              </button>
+            </div>
+          </div>
+        </div>
       </div>
-      <div style="background-image: url('./photo/slider/gamer-room-line-hero.webp')">
-        <div class="textFormat">Developer</div>
-      </div>
-      <div style="background-image: url('./photo/slider/s-l1600.webp')">
-        <div class="textFormat">Tester</div>
-      </div>
-    </div>
-  </div>
-</body>
+    </header>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const brandsLink = document.getElementById("brandsLink");
+        const modalBody = document.getElementById("modalBody");
+
+        const images = [
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp",
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp",
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp",
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp",
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp",
+          "https://mdbcdn.b-cdn.net/img/new/avatars/5.webp", // Add more URLs as needed
+        ];
+
+        brandsLink.addEventListener("click", function () {
+          modalBody.innerHTML = ""; // Clear existing images
+          const imageGrid = document.createElement("div");
+          imageGrid.className = "image-grid";
+
+          images.forEach((src, index) => {
+            const img = document.createElement("img");
+            img.src = src;
+            img.className = "rounded-3";
+            img.alt = "Avatar";
+            imageGrid.appendChild(img);
+          });
+
+          modalBody.appendChild(imageGrid);
+          $("#brandModal").modal("show");
+        });
+      });
+    </script>
+  </body>
 </html>
