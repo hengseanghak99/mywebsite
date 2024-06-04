@@ -13,12 +13,9 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat-Bold";
+  font-family: "Montserrat";
 }
 
-p {
-  color:#f8f9fa;
-}
 .section-container {
   display: flex;
   justify-content: space-around;
@@ -244,6 +241,9 @@ p {
   .flex-grow-1 {
     order: 2; /* Move text content below images on mobile */
   }
+}
+.social-icons {
+  color: #a5ba8d;
 }
 
 @media (min-width: 768px) {
