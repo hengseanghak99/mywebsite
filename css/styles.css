@@ -17,7 +17,7 @@ h6 {
 }
 
 p {
-  color: #8f8f8f;
+  color:#f8f9fa;
 }
 .section-container {
   display: flex;
@@ -38,7 +38,6 @@ p {
 .btn:hover {
   transform: translateY(-5px);
   box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-  border-width: 2px;
   border-color: #a95f5f;
 }
 
@@ -231,3 +230,25 @@ p {
   .product-grid{ margin-bottom: 30px; }
 }
 /* Headings */
+@media (max-width: 768px) {
+  /* Adjust for smaller screens (mobile) */
+  .content {
+    flex-wrap: wrap; /* Wrap content on smaller screens */
+  }
+
+  .content img {
+    width: 100%; /* Images take full width on mobile */
+    margin-bottom: 1rem; /* Add some spacing between elements on mobile */
+  }
+
+  .flex-grow-1 {
+    order: 2; /* Move text content below images on mobile */
+  }
+}
+
+@media (min-width: 768px) {
+  /* Adjustments for larger screens (desktop) */
+  .content img:first-child {
+    margin-right: 1rem; /* Add spacing between logo and text on desktop */
+  }
+}
