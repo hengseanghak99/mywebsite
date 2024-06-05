@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Webpage Example</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
+    <style></style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-info text-white p-3">
+            <a class="navbar-brand" href="./homepage.html">
+                <img src="./photo/tnw.png" style="width: 120px" alt="Logo" class="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link text-white mr-3" href="./homepage.html">Home <span
+                                class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mr-3" href="#" id="brandsLink">Brands</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link text-white mr-3" href="./categoriespage.html">Categories</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search" />
+                    <button class="btn btn-outline-success my-2 my-sm-0 bg-dark" type="submit">
+                        Search
+                    </button>
+                </form>
+            </div>
+        </nav>
+    </header>
+    <div class="modal fade" id="brandModal" tabindex="-1" role="dialog" aria-labelledby="brandModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="brandModalLabel">Brand Modal</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">Welcome to the brand modal!</div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        Close
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Product section-->
+    <section class="py-5">
+        <div class="container px-4 px-lg-5 my-5">
+            <div class="row gx-4 gx-lg-5 align-items-center">
+                <div class="col-md-6">
+                    <img class="card-img-top mb-5 mb-md-0 h-100"
+                        src="./photo/category/Fan/large_white_079de82d3b1df547ed21f76cd18bb311.webp" alt="Fan" />
+                </div>
+                <div class="col-md-6">
+                    <div class="small mb-1">SKU: BST-498</div>
+                    <h1 class="display-5 fw-bolder">Shop item template</h1>
+                    <div class="fs-5 mb-5">
+                        <span class="text-decoration-line-through"> <s>$49.99</s><sup><strong class="ms-2 text-danger">
+                                    $45.99</strong></sup></span>
+
+                    </div>
+                    <p class="lead">
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                        Praesentium at dolorem quidem modi. Nam sequi consequatur
+                        obcaecati excepturi alias magni, accusamus eius blanditiis
+                        delectus ipsam minima ea iste laborum vero?
+                    </p>
+                    <div class="d-flex align-items-center">
+                        <input class="form-control text-center me-3" id="inputQuantity" type="number" value="1"
+                            style="max-width: 3rem;">
+                        <button class="btn btn-outline-dark flex-shrink-0" type="button">
+                            <i class="bi bi-cart-fill me-1"></i>
+                            Add to cart
+                        </button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Related items section-->
+    <section class="bg-light">
+        <div class="container py-4 text-center">
+            <h2>Related products</h2>
+          <div class="row">
+            <!-- Product Card 1 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Headphone/large_aula_s501_a48b8d48f0b0e6894002bf037f9b4717.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Aula Headphone</h5>
+                  </a>
+                  <a href="#">
+                    <p>Headphone</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$61.99</s><sup><strong class="ms-2 text-danger"> $50.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 2 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Keyboard/large_akko___3068b_plus___black___gold_c858e8436ad61255bc5bbe3a2f5ca6a6.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Akko Keyboard</h5>
+                  </a>
+                  <a href="#">
+                    <p>Keyboard</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 3 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Light strip/large_LED_strip_music_mode_22d9316d770b7f4cbd16fec14056a0bc.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Light LED strip</h5>
+                  </a>
+                  <a href="#">
+                    <p>Light strap</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 4 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Microphone/large_blue_yeti_13fe47e7e6f08bfc4afe7f95a9c195af.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Podcast Microphone</h5>
+                  </a>
+                  <a href="#">
+                    <p>Microphone</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+            <!-- Product Card 5 -->
+            <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Monitor/large_1_007ed07006.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Asus ProArt 35 inch</h5>
+                  </a>
+                  <a href="#">
+                    <p>Monitor</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+             <!-- Product Card 6 -->
+             <div class="col-lg-3 col-md-6 mb-4">
+              <div class="card">
+                <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                  data-mdb-ripple-color="light">
+                  <img src="./photo/category/Monitor/large_1_94dfe881ea.webp"
+                    class="card-img-top w-100" alt="Product Image 3" />
+                  <span class="badge bg-danger badge-custom">-10%</span>
+                  <div class="hover-overlay">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                  </div>
+                </div>
+                <div class="card-body">
+                  <a href="#" class="text-reset">
+                    <h5 class="card-title mb-3">Asus ProArt 43 inch</h5>
+                  </a>
+                  <a href="#">
+                    <p>Monitor</p>
+                  </a>
+                  <h6 class="mb-3">
+                    <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                  </h6>
+                </div>
+              </div>
+            </div>
+               <!-- Product Card 7 -->
+               <div class="col-lg-3 col-md-6 mb-4">
+                <div class="card">
+                  <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                    data-mdb-ripple-color="light">
+                    <img src="./photo/category/Motherboard/large_Asus_PRIME_B760M_A_D4_7c598d594d15d9f8f566f13dc6cf1f92.webp"
+                      class="card-img-top w-100" alt="Product Image 3" />
+                    <span class="badge bg-danger badge-custom">-10%</span>
+                    <div class="hover-overlay">
+                      <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                    <a href="#" class="text-reset">
+                      <h5 class="card-title mb-3">Asus Motherboard</h5>
+                    </a>
+                    <a href="#">
+                      <p>Motherboard</p>
+                    </a>
+                    <h6 class="mb-3">
+                      <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                    </h6>
+                  </div>
+                </div>
+              </div>
+                <!-- Product Card 8 -->
+                <div class="col-lg-3 col-md-6 mb-4">
+                  <div class="card">
+                    <div class="bg-image hover-zoom ripple ripple-surface ripple-surface-light position-relative border border-success"
+                      data-mdb-ripple-color="light">
+                      <img src="./photo/category/Headphone/large_hyperx_cloud_stinger_core_7_1_wire_757f2a6f784b2199e375ac1858ae45d1.webp"
+                        class="card-img-top w-100" alt="Product Image 3" />
+                      <span class="badge bg-danger badge-custom">-10%</span>
+                      <div class="hover-overlay">
+                        <div class="mask" style="background-color: rgba(251, 251, 251, 0.15)"></div>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                      <a href="#" class="text-reset">
+                        <h5 class="card-title mb-3">Hyper X</h5>
+                      </a>
+                      <a href="#">
+                        <p>Headphone</p>
+                      </a>
+                      <h6 class="mb-3">
+                        <s>$49.99</s><sup><strong class="ms-2 text-danger"> $45.99</strong></sup>
+                      </h6>
+                    </div>
+                  </div>
+                </div>
+          </div>
+        </div>
+      </section>
+    <footer class="footer bg-danger text-white py-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h3 class="footer-headtext">Contact Us</h3>
+                    <p>Heng Seanghak</p>
+                    <p>085290956</p>
+                    <p>hengseanghak10499@gmail.com</p>
+                </div>
+                <div class="col-md-4 text-center">
+                    <img src="./photo/tnw.png" style="width: 130px" alt="logo" class="img-fluid mb-3" />
+                    <p>"Best seller of the year"</p>
+                </div>
+                <div class="col-md-4">
+                    <h3 class="footer-headtext">Working Hours</h3>
+                    <div class="d-flex">
+                        <p class="textFormat">Monday - Friday &ensp;</p>
+                        <p class="textFormat">08:00am - 08:00PM</p>
+                    </div>
+                    <div class="d-flex">
+                        <p class="textFormat">Saturday - Sunday &ensp;</p>
+                        <p class="textFormat">08:00am - 04:00PM</p>
+                    </div>
+                </div>
+            </div>
+            <div class="footer_copyRight mt-5">
+                <p class="text-center">2024 Heng Seanghak. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+
+</html>
